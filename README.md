@@ -1,36 +1,22 @@
 # GW2Dental
 
-## Setup
 
-Make sure to install dependencies:
+## Static Site
+[docs](https://nuxt.com/blog/going-full-static)
+
+Install dependencies:
 
 ```bash
-# pnpm
 pnpm install
 ```
 
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Run locally
 
 ```bash
-# pnpm
-pnpm dev
+pnpm start
 ```
 
-## Production
-
-Build the application for production:
-
+Build static site
 ```bash
-# pnpm
-pnpm build
-```
-
-Locally preview production build:
-
-```bash
-# pnpm
-pnpm preview
+pnpm generate
 ```
