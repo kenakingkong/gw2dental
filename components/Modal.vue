@@ -1,16 +1,10 @@
-<script setup>
-const props = defineProps({
-  show: Boolean
-})
-</script>
-
 <template>
   <Transition name="modal">
-    <div v-if="show" class="modal-mask">
-      <div class="modal-container">
+    <div v-if="show" class="modal-mask fixed z-[9998] top-0 left-0 w-full h-full bg-black/50 flex">
+      <div class="modal-container w-full max-w-xl p-4 md:p-8 bg-white shadow">
         <div class="modal-header">
+          <button class="modal-default-button absolute top-4 right-4" @click="$emit('close')">x</button>
           <slot name="header" />
-          <button class="modal-default-button" @click="$emit('close')">x</button>
         </div>
         <div class="modal-body">
           <slot name="body" />
@@ -25,53 +19,20 @@ const props = defineProps({
 
 <style>
 .modal-mask {
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
   transition: opacity 0.3s ease;
 }
 
 .modal-container {
-  width: 300px;
-  margin: auto;
-  padding: 20px 30px;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
-}
-
-.modal-header h3 {
-  margin-top: 0;
-  color: #42b983;
 }
 
 .modal-body {
   margin: 20px 0;
 }
 
-.modal-default-button {
-  float: right;
-}
+/* animations */
 
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
-
-.modal-enter-from {
-  opacity: 0;
-}
-
+.modal-enter-from,
 .modal-leave-to {
   opacity: 0;
 }
@@ -82,3 +43,9 @@ const props = defineProps({
   transform: scale(1.1);
 }
 </style>
+
+<script setup>
+const props = defineProps({
+  show: Boolean
+})
+</script>

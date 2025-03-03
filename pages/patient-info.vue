@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <Container>
     <h1>Patient Info</h1>
     <div>
       <p>content</p>
     </div>
-  </div>
+  </Container>
 </template>
