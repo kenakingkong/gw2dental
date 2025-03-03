@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>About Us</h1>
+    <h1>Patient Info</h1>
     <div>
       <p>content</p>
     </div>
