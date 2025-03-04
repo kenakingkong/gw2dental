@@ -4,7 +4,7 @@ const props = defineProps<NuxtLinkProps>()
 </script>
 
 <template>
-  <NuxtLink v-bind="props" class="no-underline hover:text-blue-500 text-sm" activeClass="underline text-blue-600">
+  <NuxtLink v-bind="props" class="no-underline hover:text-blue-500" activeClass="underline text-blue-600">
     <slot />
   </NuxtLink>
 </template>

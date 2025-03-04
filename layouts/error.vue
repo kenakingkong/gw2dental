@@ -6,9 +6,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: ['error'],
   layout: 'error' // you can set a custom layout for the error page
 }
 </script>
+
+<style lang="css">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Afacad';
+}
+</style>

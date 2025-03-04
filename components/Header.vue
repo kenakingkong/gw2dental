@@ -11,21 +11,11 @@
 
         <!-- Tablet/Desktop Items -->
         <ul class="hidden md:flex gap-6 items-center list-none sticky top-0">
-          <li class="w-max">
-            <HeaderLink to="/about" class="no-underline" activeClass="text-blue-600">About Us</HeaderLink>
+          <li v-for="link in links" class="w-max">
+            <HeaderLink :to="link.to" class="no-underline" activeClass="text-blue-600">{{ link.label }}</HeaderLink>
           </li>
           <li class="w-max">
-            <HeaderLink to="/patient-info" class="no-underline" activeClass="text-blue-600">New Patient Info
-            </HeaderLink>
-          </li>
-          <li class="w-max">
-            <HeaderLink to="/services" class="no-underline" activeClass="text-blue-600">Our Services</HeaderLink>
-          </li>
-          <li class="w-max">
-            <HeaderLink to="/" class="no-underline" activeClass="text-blue-600">Pay your bill</HeaderLink>
-          </li>
-          <li class="w-max">
-            <a href="tel:9258038999" class="no-underline" activeClass="text-blue-600">(925) 803-8999</a>
+            <a :href="phoneNumber.href" class="no-underline font-bold">{{ phoneNumber.label }}</a>
           </li>
         </ul>
 
@@ -45,26 +35,13 @@
                     <p>GW2 Dental</p>
                   </div>
                 </HeaderLink>
-                <ul class="list-none space-y-4 grow flex flex-col justify-center text-lg">
-                  <li class="w-max">
-                    <HeaderLink to="/" class="no-underline" activeClass="text-blue-600">Home</HeaderLink>
-                  </li>
-                  <li class="w-max">
-                    <HeaderLink to="/about" class="no-underline" activeClass="text-blue-600">About Us</HeaderLink>
-                  </li>
-                  <li class="w-max">
-                    <HeaderLink to="/patient-info" class="no-underline" activeClass="text-blue-600">New Patient Info
+                <ul class="list-none space-y-4 grow flex flex-col justify-center">
+                  <li v-for="link in mobileLinks" class="w-max">
+                    <HeaderLink :to="link.to" class="no-underline text-xl" activeClass="text-blue-600">{{ link.label }}
                     </HeaderLink>
                   </li>
                   <li class="w-max">
-                    <HeaderLink to="/services" class="no-underline" activeClass="text-blue-600">Our Services
-                    </HeaderLink>
-                  </li>
-                  <li class="w-max">
-                    <HeaderLink to="/" class="no-underline" activeClass="text-blue-600">Pay your bill</HeaderLink>
-                  </li>
-                  <li class="w-max">
-                    <a href="tel:9258038999" class="no-underline">(925) 803-8999</a>
+                    <a :href="phoneNumber.href" class="no-underline text-xl font-bold" >{{ phoneNumber.label }}</a>
                   </li>
                 </ul>
               </div>
@@ -78,6 +55,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import Navigation from '~/data/Navigation';
 
 const isOpen = ref(false)
+const phoneNumber = ref(Navigation.PHONE_NUMBER)
+const links = ref(Navigation.HEADER_LINKS)
+const mobileLinks = ref(Navigation.MOBILE_LINKS)
 </script>
