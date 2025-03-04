@@ -30,26 +30,10 @@ namespace Navigation {
       label: "Contact Us",
       to: "/contact",
     },
-  };
-
-  export const PHONE_NUMBER = {
-    id: "phone-number",
-    label: "(925) 803-8809",
-    href: "tel:+19258038809",
-  };
-
-  export const SOCIALS = {
-    YELP: {
-      id: "yelp",
-      label: "Yelp",
-      icon: "",
-      to: "https://www.yelp.com/biz/george-wong-dds-and-grace-wu-dds-san-ramon",
-    },
-    GOOGLE: {
-      id: "google",
-      label: "Google",
-      icon: "",
-      to: "",
+    covidPolicy: {
+      id: "covid-policy",
+      label: "COVID-19 Policy",
+      to: "/covid",
     },
   };
 
@@ -60,15 +44,16 @@ namespace Navigation {
     LINKS.payBill,
   ];
 
+  export const MOBILE_LINKS = [LINKS.home, ...HEADER_LINKS];
+
   export const FOOTER_LINKS = [
     LINKS.home,
     LINKS.about,
     LINKS.services,
     LINKS.patientResources,
     LINKS.payBill,
+    LINKS.covidPolicy,
   ];
-
-  export const MOBILE_LINKS = FOOTER_LINKS;
 }
 
 export default Navigation;

@@ -41,7 +41,7 @@
                     </HeaderLink>
                   </li>
                   <li class="w-max">
-                    <a :href="phoneNumber.href" class="no-underline text-xl font-bold" >{{ phoneNumber.label }}</a>
+                    <a :href="phoneNumber.href" class="no-underline text-xl font-bold">{{ phoneNumber.label }}</a>
                   </li>
                 </ul>
               </div>
@@ -55,10 +55,12 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import Contact from '~/data/Contact';
 import Navigation from '~/data/Navigation';
 
 const isOpen = ref(false)
-const phoneNumber = ref(Navigation.PHONE_NUMBER)
+
 const links = ref(Navigation.HEADER_LINKS)
 const mobileLinks = ref(Navigation.MOBILE_LINKS)
+const phoneNumber = ref(Contact.PHONE_NUMBER)
 </script>
