@@ -1,10 +1,10 @@
 <template>
   <div class="w-full h-full min-h-screen flex flex-col">
-    <Header />
+    <LayoutHeader />
     <main class="grow">
       <slot />
     </main>
-    <Footer />
+    <LayoutFooter />
   </div>
 </template>
 

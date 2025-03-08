@@ -1,18 +1,18 @@
 <template>
   <header>
-    <Container>
+    <UiContainer>
       <nav class="w-full flex gap-6 justify-between items-center">
-        <HeaderLink to="/" class="no-underline">
+        <Link to="/" class="no-underline">
           <div class="flex gap-2 items-center">
             <p>logo</p>
             <p>GW2 Dental</p>
           </div>
-        </HeaderLink>
+        </Link>
 
         <!-- Tablet/Desktop Items -->
         <ul class="hidden md:flex gap-6 items-center list-none sticky top-0">
           <li v-for="link in links" class="w-max">
-            <HeaderLink :to="link.to" class="no-underline" activeClass="text-blue-600">{{ link.label }}</HeaderLink>
+            <Link :to="link.to" class="no-underline" activeClass="text-blue-600">{{ link.label }}</Link>
           </li>
           <li class="w-max">
             <a :href="phoneNumber.href" class="no-underline font-bold">{{ phoneNumber.label }}</a>
@@ -26,19 +26,19 @@
 
         <!-- Mobile Items via Slide in Panel -->
         <Teleport to="body">
-          <Panel :show="isOpen" @close="isOpen = false">
+          <UiPanel :show="isOpen" @close="isOpen = false">
             <template #body>
               <div class="h-full p-6 flex flex-col">
-                <HeaderLink to="/" class="no-underline">
+                <Link to="/" class="no-underline">
                   <div class="flex gap-2 items-center">
                     <p>logo</p>
                     <p>GW2 Dental</p>
                   </div>
-                </HeaderLink>
+                </Link>
                 <ul class="list-none space-y-4 grow flex flex-col justify-center">
                   <li v-for="link in mobileLinks" class="w-max">
-                    <HeaderLink :to="link.to" class="no-underline text-xl" activeClass="text-blue-600">{{ link.label }}
-                    </HeaderLink>
+                    <Link :to="link.to" class="no-underline text-xl" activeClass="text-blue-600">{{ link.label }}
+                    </Link>
                   </li>
                   <li class="w-max">
                     <a :href="phoneNumber.href" class="no-underline text-xl font-bold">{{ phoneNumber.label }}</a>
@@ -46,15 +46,16 @@
                 </ul>
               </div>
             </template>
-          </Panel>
+          </UiPanel>
         </Teleport>
       </nav>
-    </Container>
+    </UiContainer>
   </header>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import Link from "./Link.vue"
 import Contact from '~/data/Contact';
 import Navigation from '~/data/Navigation';
 

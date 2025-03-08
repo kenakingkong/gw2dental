@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <UiContainer>
     <h1>About Us</h1>
     <div>
       <p>We are a contemporary dentistry run by a husband-wife duo and a team of amazing professionals in San Ramon.
@@ -7,5 +7,5 @@
       <p>We use cutting edge x-ray machinery and 3D modeling technology to make sure you get the highest quality dental
         care. We also massage chairs and free wifi during your appointment.</p>
     </div>
-  </Container>
+  </UiContainer>
 </template>
