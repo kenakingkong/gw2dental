@@ -1,5 +1,5 @@
 <template>
-  <UiContainer class="space-y-4">
+  <UiSection>
     <UiSectionHeader class="text-center">
       <template v-slot:header>Read the reviews</template>
       <template v-slot:subheader>Most of our patients are referred by friends, family,
@@ -7,12 +7,12 @@
     </UiSectionHeader>
     <ul class="grid md:grid-cols-3 gap-2 md:gap-6">
       <li v-for="testimonial in testimonials"
-        class="rounded-lg border bg-secondary p-4 md:p-6 flex flex-col justify-between gap-2">
+        class="rounded-lg bg-white text-primary p-4 md:p-6 flex flex-col justify-between gap-2">
         <p>{{ testimonial.quote }}</p>
         <p>{{ testimonial.quoted }}</p>
       </li>
     </ul>
-  </UiContainer>
+  </UiSection>
 </template>
 
 <script setup lang="ts">

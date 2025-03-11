@@ -1,7 +1,7 @@
 <template>
   <div class="grid md:grid-cols-4 gap-4 md:gap-8">
     <div class="md:col-span-2">
-      <div class="space-y-4 md:space-y-8">
+      <div class="p-4 space-y-4 md:space-y-8">
         <h1 class="text-5xl md:text-7xl font-semibold">Let us craft your perfect smile!</h1>
         <p class="text-lg md:text-2xl max-w-md">Get high-quality dental treatment from dentists that will treat
           you like family.
@@ -10,15 +10,25 @@
       </div>
     </div>
     <div class="md:col-span-1">
-      <div class="w-full h-full rounded-lg bg-blue-100">
-        <p>img</p>
-        <p>George Wong, DDS</p>
+      <div class="group relative w-full h-full">
+        <div class="h-full w-full border-2 rounded-md border-secondary/40"></div>
+        <div class="absolute -top-3 -left-3 group-hover:-top-2.5 group-hover:-left-2.5 transition-translate w-full h-full rounded-md bg-blue-100">
+          <div class="absolute top-[73%] right-0 w-2/3 bg-secondary/90 h-12"></div>
+          <div class="absolute top-[60%] w-4/5 bg-secondary/90 text-white h-16 p-4">
+            <p class="font-bold text-lg">George Wong, DDS</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="md:col-span-1">
-      <div class="w-full h-full rounded-lg bg-blue-100">
-        <p>img</p>
-        <p>Grace Wu, DDS</p>
+      <div class="group relative w-full h-full">
+        <div class="h-full w-full border-2 rounded-md border-secondary/40"></div>
+        <div class="absolute -top-3 -left-3 group-hover:-top-2.5 group-hover:-left-2.5 transition-translate w-full h-full rounded-md bg-blue-100">
+          <div class="absolute top-[73%] right-0 w-2/3 bg-secondary/90 h-12"></div>
+          <div class="absolute top-[60%] w-4/5 bg-secondary/90 text-white h-16 p-4">
+            <p class="font-bold text-lg">Grace Wu, DDS</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

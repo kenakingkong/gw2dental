@@ -8,8 +8,8 @@
       <LayoutSubtitle>We have a wide range of treatments and services - from routine cleanings to tooth replacements.
       </LayoutSubtitle>
     </div>
-    <div>
-      <p>content</p>
-    </div>
   </UiContainer>
+  <UiSection>
+    list the treatments here..
+  </UiSection>
 </template>

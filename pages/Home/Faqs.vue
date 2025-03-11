@@ -1,5 +1,5 @@
 <template>
-  <UiContainer class="space-y-4">
+  <UiContainer>
     <UiHeader class="text-center">FAQs</UiHeader>
     <ul>
       <li>faq #1</li>

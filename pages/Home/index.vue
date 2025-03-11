@@ -5,11 +5,11 @@
       <div class="w-full max-w-6xl mx-auto md:mt-16 md:mb-8">
         <Hero />
       </div>
-      <div class="w-full max-w-6xl mx-auto rounded-lg bg-white p-4 md:p-16 text-center space-y-4 md:space-y-8 shadow">
+      <div class="p-4 w-full max-w-6xl mx-auto rounded-lg bg-white p-4 md:p-16 text-center space-y-4 md:space-y-8 shadow">
         <Treatments />
       </div>
     </div>
-    <div>
+    <div class="bg-primary text-white">
       <Reviews />
     </div>
     <div>

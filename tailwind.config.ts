@@ -4,8 +4,8 @@ export default <Partial<typeof Config>>{
   theme: {
     extend: {
       colors: {
-        primary: "#02738A",
-        secondary: "#D4E6EA",
+        primary: "#3F7286",
+        secondary: "#6FB2C0",
       },
       fontFamily: {
         custom: ["Afacad"],

@@ -7,17 +7,17 @@ namespace Navigation {
     },
     about: {
       id: "about",
-      label: "About Us",
+      label: "About",
       to: "/about",
     },
     services: {
       id: "services",
-      label: "Our Services",
+      label: "Services",
       to: "/services",
     },
     patientResources: {
       id: "patient-resources",
-      label: "Patient Resources",
+      label: "New Patients",
       to: "/patient-resources",
     },
     payBill: {
@@ -27,7 +27,7 @@ namespace Navigation {
     },
     contact: {
       id: "contact",
-      label: "Contact Us",
+      label: "Contact",
       to: "/contact",
     },
     covidPolicy: {
@@ -51,6 +51,7 @@ namespace Navigation {
     LINKS.about,
     LINKS.services,
     LINKS.patientResources,
+    LINKS.contact,
     LINKS.payBill,
     LINKS.covidPolicy,
   ];

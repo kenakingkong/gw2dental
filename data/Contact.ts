@@ -6,14 +6,14 @@ namespace Contact {
     icon: "",
   };
 
-  const EMAIL = {
+  export const EMAIL = {
     id: "email",
     label: "smile@gw2dental.com",
     href: "mailto:smile@gw2dental.com",
     icon: "",
   };
 
-  const ADDRESS = {
+  export const ADDRESS = {
     id: "address",
     label: [
       "2301 Camino Ramon, Suite 100",
@@ -24,7 +24,7 @@ namespace Contact {
     icon: "",
   };
 
-  const HOURS = {
+  export const HOURS = {
     id: "hours",
     label: [
       ["Mon. - Thurs.", "8am - 6pm"],
