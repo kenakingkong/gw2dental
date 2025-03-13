@@ -3,7 +3,7 @@ namespace Contact {
     id: "phone-number",
     label: "(925) 803-8809",
     href: "tel:+19258038809",
-    icon: "",
+    icon: "material-symbols:phone-enabled",
   };
 
   export const EMAIL = {

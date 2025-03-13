@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full min-h-screen flex flex-col">
-    <div class="bg-blue-50">
+    <div class="bg-blue-50/10">
       <LayoutHeader />
       <div class="w-full max-w-6xl mx-auto md:mt-16 md:mb-8">
         <Hero />

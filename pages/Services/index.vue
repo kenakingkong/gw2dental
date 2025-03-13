@@ -2,13 +2,17 @@
 </script>
 
 <template>
-  <UiContainer>
-    <div class="space-y-4">
-      <LayoutTitle>Services</LayoutTitle>
-      <LayoutSubtitle>We have a wide range of treatments and services - from routine cleanings to tooth replacements.
-      </LayoutSubtitle>
+  <div class="relative">
+    <UiBlockBackground />
+    <div class="py-6 md:py-12">
+      <UiContainer class="text-white">
+        <LayoutTitle>Services</LayoutTitle>
+        <LayoutSubtitle class="max-w-2xl">We have a wide range of treatments and services - from routine cleanings to
+          tooth replacements.
+        </LayoutSubtitle>
+      </UiContainer>
     </div>
-  </UiContainer>
+  </div>
   <UiSection>
     list the treatments here..
   </UiSection>
