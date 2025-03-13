@@ -53,7 +53,7 @@ namespace Navigation {
     LINKS.patientResources,
     LINKS.contact,
     LINKS.payBill,
-    LINKS.covidPolicy,
+    // LINKS.covidPolicy,
   ];
 }
 
