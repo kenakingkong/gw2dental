@@ -3,14 +3,14 @@ namespace Contact {
     id: "phone-number",
     label: "(925) 803-8809",
     href: "tel:+19258038809",
-    icon: "material-symbols:phone-enabled",
+    icon: "phone_enabled",
   };
 
   export const EMAIL = {
     id: "email",
     label: "smile@gw2dental.com",
     href: "mailto:smile@gw2dental.com",
-    icon: "",
+    icon: "mail",
   };
 
   export const ADDRESS = {
@@ -21,7 +21,7 @@ namespace Contact {
       "San Ramon, CA 94583",
     ],
     href: "https://maps.app.goo.gl/sAXRdg8n8an7H2Hy9",
-    icon: "",
+    icon: "location_on",
   };
 
   export const HOURS = {
@@ -30,21 +30,19 @@ namespace Contact {
       ["Mon. - Thurs.", "8am - 6pm"],
       ["Sat. - Sun.", "9am - 5pm"],
     ],
-    icon: "",
+    icon: "nest_clock_farsight_analog",
   };
 
   export const SOCIALS = {
     YELP: {
       id: "yelp",
       label: "Yelp",
-      to: "https://www.yelp.com/biz/george-wong-dds-and-grace-wu-dds-san-ramon",
-      icon: "",
+      href: "https://www.yelp.com/biz/george-wong-dds-and-grace-wu-dds-san-ramon",
     },
     GOOGLE: {
       id: "google",
       label: "Google",
-      to: "https://maps.app.goo.gl/sAXRdg8n8an7H2Hy9",
-      icon: "",
+      href: "https://maps.app.goo.gl/sAXRdg8n8an7H2Hy9",
     },
   };
 

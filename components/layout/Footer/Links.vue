@@ -15,8 +15,10 @@ import Link from '../Header/Link.vue';
               }}</Link>
             </li>
           </ul>
-          <div>
-            <span class="font-bold">Leave us a review</span><span>google</span> <span>yelp</span>
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-lg">Leave us a review</span>
+            <a :href="Contact.SOCIALS.GOOGLE.href" class="underline">{{ Contact.SOCIALS.GOOGLE.label }}</a>
+            <a :href="Contact.SOCIALS.YELP.href" class="underline">{{ Contact.SOCIALS.YELP.label }}</a>
           </div>
         </div>
         <p class="text-2xl font-medium">logo</p>
@@ -29,7 +31,7 @@ import Link from '../Header/Link.vue';
         <p><span v-for="s in Contact.ADDRESS.label" class="block w-full">{{ s }}</span></p>
         <p class="md:text-right">
           <span class="block">{{ Contact.PHONE_NUMBER.label }}</span>
-          <span class="block">{{ Contact.EMAIL.label }}</span>
+          <a :href="Contact.EMAIL.href" class="block hover:text-black">{{ Contact.EMAIL.label }}</a>
         </p>
       </div>
       <p class="text-primary/60">

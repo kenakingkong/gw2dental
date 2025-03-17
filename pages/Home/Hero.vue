@@ -14,7 +14,7 @@
         <div class="h-full w-full border-2 rounded-md border-secondary/40"></div>
         <div
           class="absolute -top-3 -left-3 group-hover:-top-2.5 group-hover:-left-2.5 transition-translate w-full h-full">
-          <Dentist>George Wong, DDS</Dentist>
+          <Dentist src="/george_wong.webp" alt="George Wong Headshot">George Wong, DDS</Dentist>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <div class="h-full w-full border-2 rounded-md border-secondary/40"></div>
         <div
           class="absolute -top-3 -left-3 group-hover:-top-2.5 group-hover:-left-2.5 transition-translate w-full h-full">
-          <Dentist>Grace Wu, DDS</Dentist>
+          <Dentist src="/grace_wu.webp" alt="Grace Wu Headshot">Grace Wu, DDS</Dentist>
         </div>
       </div>
     </div>

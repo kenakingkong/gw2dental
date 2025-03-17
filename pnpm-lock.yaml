@@ -11,6 +11,9 @@ dependencies:
   '@nuxtjs/tailwindcss':
     specifier: ^6.13.1
     version: 6.13.1
+  material-symbols:
+    specifier: ^0.29.1
+    version: 0.29.1
   nuxt:
     specifier: ^3.15.4
     version: 3.15.4(typescript@5.8.2)(vite@6.2.0)
@@ -4174,6 +4177,10 @@ packages:
       '@babel/parser': 7.26.9
       '@babel/types': 7.26.9
       source-map-js: 1.2.1
+    dev: false
+
+  /material-symbols@0.29.1:
+    resolution: {integrity: sha512-kZACL+R/u+bbvPBQJifF3pDH8Pko0MR1V8+NwTQ1S8pXH36uAOnl86qY6dHqOy2ut8EfYL/w0HL7wd9eYBSMCg==}
     dev: false
 
   /math-intrinsics@1.1.0:

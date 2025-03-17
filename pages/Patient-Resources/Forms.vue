@@ -1,22 +1,19 @@
 <script setup lang="ts">
-const forms = ref([
-  { label: "Request for Record Release", href: "", icon: "" },
-  { label: "Financial Policy", href: "", icon: "" },
-  { label: "Office Policy", href: "", icon: "" },
-  { label: "HIPAA and Fillings Policy", href: "", icon: "" },
-  { label: "Doctor Referral Form", href: "", icon: "" }
-])
+import Forms from '~/data/Forms';
 </script>
 
 <template>
   <UiSection>
-    <UiHeader>New Patient Forms</UiHeader>
+    <div class="space-y-2">
+      <UiHeader>New Patient Forms</UiHeader>
+      <UiSubheader>Please fill out these forms prior to your first consultation to streamline your visit.</UiSubheader>
+    </div>
     <ul class="space-y-4">
-      <li v-for="form in forms">
+      <li v-for="form in Forms.ALL">
         <a :href="form.href"
           class="block bg-white/10 hover:bg-white/20 transition-all p-4 md:p-6 rounded flex justify-between">
-          <span class="text-2xl font-medium">{{ form.label }}</span>
-          <span>i</span>
+          <span class="text-lg md:text-2xl font-medium">{{ form.label }}</span>
+          <span class="material-symbols-rounded pt-1">{{ form.icon }}</span>
         </a>
       </li>
     </ul>

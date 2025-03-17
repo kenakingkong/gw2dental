@@ -23,7 +23,7 @@ namespace Navigation {
     payBill: {
       id: "pay-bill",
       label: "Pay your Bill",
-      to: "https://makenakong.com",
+      to: "https://georgefwongdds.securepayments.cardpointe.com",
     },
     contact: {
       id: "contact",
