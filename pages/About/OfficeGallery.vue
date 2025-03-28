@@ -1,8 +1,8 @@
 <template>
   <UiSection>
     <UiHeader>Our office</UiHeader>
-    <UiSubheader>photo 1</UiSubheader>
-    <UiSubheader>photo 2</UiSubheader>
-    <UiSubheader>photo 3</UiSubheader>
+    <UiBody>photo 1</UiBody>
+    <UiBody>photo 2</UiBody>
+    <UiBody>photo 3</UiBody>
   </UiSection>
 </template>

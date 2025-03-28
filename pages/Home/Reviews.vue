@@ -5,9 +5,9 @@
       <template v-slot:subheader>Most of our patients are referred by friends, family,
         neighbors, etc - here is what some of them have to say.</template>
     </UiSectionHeader>
-    <ul class="grid md:grid-cols-3 gap-2 md:gap-6">
+    <ul class="grid md:grid-cols-3 gap-4 md:gap-6">
       <li v-for="testimonial in testimonials"
-        class="rounded-lg bg-white text-primary p-4 md:p-6 flex flex-col justify-between gap-2">
+        class="rounded-lg bg-primary/10 text-primary p-4 md:p-6 flex flex-col justify-between gap-2">
         <p>{{ testimonial.quote }}</p>
         <p>{{ testimonial.quoted }}</p>
       </li>

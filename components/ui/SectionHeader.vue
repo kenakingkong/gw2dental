@@ -3,8 +3,8 @@
     <UiHeader>
       <slot name="header" />
     </UiHeader>
-    <UiSubheader>
+    <UiBody>
       <slot name="subheader" />
-    </UiSubheader>
+    </UiBody>
   </div>
 </template>

@@ -24,6 +24,7 @@ namespace Navigation {
       id: "pay-bill",
       label: "Pay your Bill",
       to: "https://georgefwongdds.securepayments.cardpointe.com",
+      icon: "outbound"
     },
     contact: {
       id: "contact",

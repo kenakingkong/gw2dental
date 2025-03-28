@@ -16,7 +16,7 @@ import Link from '../Header/Link.vue';
             </li>
           </ul>
           <div class="flex items-center gap-2">
-            <span class="font-bold text-lg">Leave us a review</span>
+            <span class="font-bold text-lg tracking-wide">Leave us a review</span>
             <a :href="Contact.SOCIALS.GOOGLE.href" class="underline">{{ Contact.SOCIALS.GOOGLE.label }}</a>
             <a :href="Contact.SOCIALS.YELP.href" class="underline">{{ Contact.SOCIALS.YELP.label }}</a>
           </div>

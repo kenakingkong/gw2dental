@@ -11,9 +11,8 @@ import TransferHistory from './TransferHistory.vue';
     <div class="py-6 md:py-12">
       <UiContainer class="text-white">
         <LayoutTitle>New Patient Resources</LayoutTitle>
-        <LayoutSubtitle class="max-w-xl">We have a list of accepted insurances, new patient forms, transferring
-          dentists,
-          and more!
+        <LayoutSubtitle class="max-w-xl">Learn more about our accepted insurances and what to expect from your first
+          consultation.
         </LayoutSubtitle>
       </UiContainer>
     </div>
@@ -22,8 +21,12 @@ import TransferHistory from './TransferHistory.vue';
   <div class="bg-primary text-white">
     <Forms />
   </div>
-  <UiSection class="lg:space-y-16">
-    <FirstAppointment />
+  <div class="bg-primary/10">
+    <UiSection>
+      <FirstAppointment />
+    </UiSection>
+  </div>
+  <UiSection>
     <TransferHistory />
   </UiSection>
 </template>

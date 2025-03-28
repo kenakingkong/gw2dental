@@ -16,10 +16,10 @@ import Contact from '~/data/Contact';
     </div>
     <UiSection>
       <UiHeader>We are here to help!</UiHeader>
-      <UiSubheader>Come in for an appointment and our dentists will help you figure out the best course of
+      <UiBody>Come in for an appointment and our dentists will help you figure out the best course of
         action - that fits your needs physically and financially.
-      </UiSubheader>
-      <UiSubheader>Call to book your appointment {{ Contact.PHONE_NUMBER.label }}</UiSubheader>
+      </UiBody>
+      <UiBody>Call to book your appointment {{ Contact.PHONE_NUMBER.label }}</UiBody>
     </UiSection>
   </div>
 </template>

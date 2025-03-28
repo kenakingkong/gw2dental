@@ -6,7 +6,7 @@ import Forms from '~/data/Forms';
   <UiSection>
     <div class="space-y-2">
       <UiHeader>New Patient Forms</UiHeader>
-      <UiSubheader>Please fill out these forms prior to your first consultation to streamline your visit.</UiSubheader>
+      <UiBody>Please fill out these forms prior to your first consultation to streamline your visit.</UiBody>
     </div>
     <ul class="space-y-4">
       <li v-for="form in Forms.ALL">
