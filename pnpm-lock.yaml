@@ -24,6 +24,11 @@ dependencies:
     specifier: latest
     version: 4.5.0(vue@3.5.13)
 
+devDependencies:
+  typescript:
+    specifier: ^5.8.2
+    version: 5.8.2
+
 packages:
 
   /@alloc/quick-lru@5.2.0:
@@ -6148,7 +6153,6 @@ packages:
     resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: false
 
   /ufo@1.5.4:
     resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
