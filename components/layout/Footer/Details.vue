@@ -16,11 +16,5 @@ import Contact from '~/data/Contact';
         </UiContainer>
       </div>
     </div>
-    <div class="hidden">
-      <span class="material-symbols-rounded">phone_enabled</span>
-      <span class="material-symbols-rounded">mail</span>
-      <span class="material-symbols-rounded">location_on</span>
-      <span class="material-symbols-rounded">nest_clock_farsight_analog</span>
-    </div>
   </UiContainer>
 </template>
