@@ -11,14 +11,15 @@
         <div v-if="callout && bottomCallout">
           <UiFloatingBox class="bg-secondary/10 flex items-center gap-4 md:gap-6">
             <span class="material-symbols-rounded">info</span>
-            <p class="md:text-lg">{{ callout.body }}</p>
+            <p class="">{{ callout.body }}</p>
           </UiFloatingBox>
         </div>
       </div>
       <div v-if="callout && sideCallout" class="w-full h-full flex items-start">
         <UiFloatingBox class="space-y-4">
           <div class="h-8 w-8 rounded-full bg-gray-100"></div>
-          <p class="md:text-lg">{{ callout.body }}</p>
+          <!-- <DentistAvatar :src="" :alt="" /> -->
+          <p class="">{{ callout.body }}</p>
         </UiFloatingBox>
       </div>
     </div>

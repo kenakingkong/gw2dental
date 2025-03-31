@@ -11,9 +11,6 @@ import TransferHistory from './TransferHistory.vue';
     <div class="py-6 md:py-12">
       <UiContainer class="text-white">
         <LayoutTitle>New Patient Resources</LayoutTitle>
-        <LayoutSubtitle class="max-w-xl">Learn more about our accepted insurances and what to expect from your first
-          consultation.
-        </LayoutSubtitle>
       </UiContainer>
     </div>
   </div>

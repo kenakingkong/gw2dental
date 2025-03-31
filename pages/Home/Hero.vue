@@ -12,7 +12,8 @@
       <div class="group relative w-full h-full">
         <div class="h-full w-full border-2 rounded-md border-secondary/40"></div>
         <div class="absolute -top-3 -left-3 w-full h-full">
-          <Dentist src="/george_wong.webp" alt="George Wong Headshot">George Wong, DDS</Dentist>
+          <Dentist :src="WONG.imageUrls.standard" :alt="WONG.name">{{ WONG.longName }}
+          </Dentist>
         </div>
       </div>
     </div>
@@ -20,21 +21,26 @@
       <div class="hidden md:block group relative w-full h-full">
         <div class="h-full w-full border-2 rounded-md border-secondary/40"></div>
         <div class="absolute -top-3 -left-3 w-full h-full">
-          <Dentist src="/grace_wu.webp" alt="Grace Wu Headshot">Grace Wu, DDS</Dentist>
+          <Dentist :src="WU.imageUrls.standard" :alt="WU.name">{{ WU.longName }}</Dentist>
         </div>
       </div>
     </div>
     <div class="block md:hidden grid grid-cols-2 px-8">
-      <div class="flex flex-col items-center gap-1">
-        <img src="/george_wong.webp" alt="George Wong Headshot"
-          class="object-cover object-top w-24 h-24 rounded-full" />
-        <p>George Wong, DDS</p>
+      <div class="flex flex-col items-center gap-2">
+        <img :src="WONG.imageUrls.standard" :alt="WONG.name" class="object-cover object-top w-24 h-24 rounded-lg" />
+        <p class="text-primary font-medium">{{ WONG.longName }}</p>
       </div>
-      <div class="flex flex-col items-center gap-1">
-        <img src="/grace_wu.webp" alt="Grace Wu Headshot" class="object-cover object-top w-24 h-24 rounded-full" />
-        <p>Grace Wu, DDS</p>
+      <div class="flex flex-col items-center gap-2">
+        <img :src="WU.imageUrls.standard" :alt="WU.name" class=" object-cover object-top w-24 h-24
+          rounded-lg" />
+        <p class="text-primary font-medium">{{ WU.longName }}</p>
       </div>
     </div>
   </div>
-
 </template>
+
+<script setup lang="ts">
+import Dentists from '~/data/Dentists';
+
+const { WONG, WU } = Dentists
+</script>

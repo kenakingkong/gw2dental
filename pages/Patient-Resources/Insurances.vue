@@ -4,9 +4,23 @@
     <table class="w-full table-auto border-separate border-spacing-y-2">
       <thead class="text-sm md:text-lg text-primary">
         <tr>
-          <th class="p-2 md:p-4 text-left">Insurance</th>
-          <th class="p-2 md:p-4">Dr. Wong</th>
-          <th class="p-2 md:p-4">Dr. Wu</th>
+          <th class="p-2 md:p-4 text-left">
+            <span>Insurance</span>
+          </th>
+          <th class="p-2 md:p-4">
+            <div class="flex items-start justify-center gap-4">
+              <DentistAvatar :src="Dentists.WONG.imageUrls.thumbnail" :alt="Dentists.WONG.name" />
+              <span>{{ Dentists.WONG.shortName }}</span>
+            </div>
+
+          </th>
+          <th class="p-2 md:p-4">
+            <div class="flex items-start justify-center gap-4">
+              <DentistAvatar :src="Dentists.WU.imageUrls.thumbnail" :alt="Dentists.WU.name" />
+              <span>{{ Dentists.WU.shortName }}</span>
+            </div>
+
+          </th>
         </tr>
       </thead>
       <tbody class="text-lg md:text-2xl font-medium text-primary">
@@ -41,3 +55,7 @@
     </table>
   </UiSection>
 </template>
+
+<script setup lang="ts">
+import Dentists from '~/data/Dentists';
+</script>
