@@ -1,7 +1,7 @@
 <template>
   <div :id="id" class="space-y-2">
     <div class="w-full flex items-center gap-4 md:gap-8">
-      <div class="w-12 md:w-16 h-12 md:h-16 text-center border">img</div>
+      <img :src="image" class="w-12 md:w-16 h-12 md:h-16" />
       <h2 class="text-2xl md:text-4xl font-bold text-primary">{{ title }}</h2>
     </div>
     <div class="md:pl-24 space-y-2 grid md:grid-cols-3 gap-2 md:gap-8 lg:gap-16">
@@ -17,8 +17,7 @@
       </div>
       <div v-if="callout && sideCallout" class="w-full h-full flex items-start">
         <UiFloatingBox class="space-y-4">
-          <div class="h-8 w-8 rounded-full bg-gray-100"></div>
-          <!-- <DentistAvatar :src="" :alt="" /> -->
+          <DentistAvatar :src="callout.image" />
           <p class="">{{ callout.body }}</p>
         </UiFloatingBox>
       </div>

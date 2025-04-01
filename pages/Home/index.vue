@@ -9,8 +9,7 @@
     <div class="bg-primary text-white">
       <UiSection class="text-center">
         <span>tooth</span>
-        <p class="text-2xl md:text-4xl font-bold tracking-wide max-w-2xl mx-auto">This is the mission statement.
-          Something about caring about you.</p>
+        <UiQuote>This is the mission statement. Something about caring about you.</UiQuote>
       </UiSection>
     </div>
     <Treatments />
@@ -20,7 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import Faqs from './Faqs.vue';
 import Hero from './Hero.vue';
 import Reviews from './Reviews.vue';
 import Treatments from './Treatments.vue';

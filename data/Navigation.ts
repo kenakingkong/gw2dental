@@ -4,37 +4,49 @@ namespace Navigation {
       id: "home",
       label: "Home",
       to: "/",
+      icon: null,
     },
     about: {
       id: "about",
-      label: "About",
-      to: "/about",
+      label: "About Us",
+      to: "/about-us",
+      icon: null,
     },
     services: {
       id: "services",
-      label: "Services",
+      label: "Our Services",
       to: "/services",
+      icon: null,
     },
     patientResources: {
       id: "patient-resources",
       label: "New Patients",
       to: "/patient-resources",
+      icon: null,
     },
     payBill: {
       id: "pay-bill",
       label: "Pay your Bill",
       to: "https://georgefwongdds.securepayments.cardpointe.com",
-      icon: "outbound"
+      icon: "arrow_outward",
+    },
+    technologies: {
+      id: "technologies",
+      label: "Technologies",
+      to: "/technologies",
+      icon: null,
     },
     contact: {
       id: "contact",
-      label: "Contact",
+      label: "Contact Us",
       to: "/contact",
+      icon: null,
     },
     covidPolicy: {
       id: "covid-policy",
       label: "COVID-19 Policy",
       to: "/covid",
+      icon: null,
     },
   };
 

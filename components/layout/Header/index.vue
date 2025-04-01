@@ -3,16 +3,17 @@
     <UiContainer>
       <nav class="w-full flex gap-6 justify-between items-center">
         <Link to="/" class="no-underline">
-          <div class="flex gap-2 items-center">
-            <p>logo</p>
-            <p>GW2 Dental</p>
-          </div>
+        <div class="flex gap-2 items-center">
+          <p>logo</p>
+          <p>GW2 Dental</p>
+        </div>
         </Link>
 
         <!-- Tablet/Desktop Items -->
         <ul class="hidden md:flex gap-6 items-center list-none sticky top-0">
           <li v-for="link in links" class="w-max">
-            <Link :to="link.to" class="no-underline" activeClass="text-blue-600">{{ link.label }}</Link>
+            <Link :to="link.to" class="no-underline flex items-center gap-1" activeClass="text-blue-600">{{ link.label
+            }}<span v-show="!!link.icon" class="material-symbols-rounded">{{ link.icon }}</span></Link>
           </li>
           <li class="w-max">
             <a :href="phoneNumber.href" class="no-underline font-bold">{{ phoneNumber.label }}</a>
@@ -21,7 +22,9 @@
 
         <!-- Mobile Button -->
         <div class="block md:hidden">
-          <button @click="isOpen = true">menu</button>
+          <button @click="isOpen = true">
+            <span class="material-symbols-rounded">menu</span>
+          </button>
         </div>
 
         <!-- Mobile Items via Slide in Panel -->
@@ -30,14 +33,16 @@
             <template #body>
               <div class="h-full p-6 flex flex-col">
                 <Link to="/" class="no-underline">
-                  <div class="flex gap-2 items-center">
-                    <p>logo</p>
-                    <p>GW2 Dental</p>
-                  </div>
+                <div class="flex gap-2 items-center">
+                  <p>logo</p>
+                  <p>GW2 Dental</p>
+                </div>
                 </Link>
                 <ul class="list-none space-y-4 grow flex flex-col justify-center">
                   <li v-for="link in mobileLinks" class="w-max">
-                    <Link :to="link.to" class="no-underline text-xl" activeClass="text-blue-600">{{ link.label }}
+                    <Link :to="link.to" class="no-underline text-xl flex items-center gap-1"
+                      activeClass="text-blue-600">{{ link.label }}
+                    <span v-show="!!link.icon" class="material-symbols-rounded">{{ link.icon }}</span>
                     </Link>
                   </li>
                   <li class="w-max">
