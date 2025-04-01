@@ -1,6 +1,6 @@
 <template>
   <UiContainer>
-    <LayoutTitle>Get in touch!</LayoutTitle>
+    <LayoutTitle>Contact</LayoutTitle>
     <div>
       <p>content</p>
     </div>
