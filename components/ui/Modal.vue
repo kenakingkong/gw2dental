@@ -1,17 +1,12 @@
 <template>
   <Transition name="modal">
-    <div v-if="show" class="modal-mask fixed z-[9998] top-0 left-0 w-full h-full bg-black/50 flex">
-      <div class="modal-container w-full max-w-xl p-4 md:p-8 bg-white shadow">
-        <div class="modal-header">
-          <button class="modal-default-button absolute top-4 right-4" @click="$emit('close')">x</button>
-          <slot name="header" />
-        </div>
-        <div class="modal-body">
-          <slot name="body" />
-        </div>
-        <div class="modal-footer">
-          <slot name="footer" />
-        </div>
+    <div v-if="show"
+      class="modal-mask fixed z-[9998] top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center">
+      <div class="modal-container relative w-full max-w-xl p-4 md:p-8 bg-white shadow rounded">
+        <button class="absolute top-4 right-4" title="close" @click="$emit('close')">
+          <span class="material-symbols-rounded text-black">close</span>
+        </button>
+        <slot />
       </div>
     </div>
   </Transition>

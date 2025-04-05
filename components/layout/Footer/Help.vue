@@ -19,7 +19,11 @@ import Contact from '~/data/Contact';
       <UiBody>Come in for an appointment and our dentists will help you figure out the best course of
         action - that fits your needs physically and financially.
       </UiBody>
-      <UiBody>Call to book your appointment {{ Contact.PHONE_NUMBER.label }}</UiBody>
+      <ul class="space-y-4 max-w-sm">
+        <li v-for="detail in Contact.DETAILS">
+          <LayoutFooterDetail v-bind="detail" />
+        </li>
+      </ul>
     </UiSection>
   </div>
 </template>

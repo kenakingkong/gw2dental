@@ -27,8 +27,9 @@ namespace Contact {
   export const HOURS = {
     id: "hours",
     label: [
-      ["Mon. - Thurs.", "8am - 6pm"],
-      ["Sat. - Sun.", "9am - 5pm"],
+      ["Mon. - Thurs.", "9am - 6pm"],
+      ["Fri.", "Appt. Only"],
+      ["Sat. - Sun.", "Closed"],
     ],
     icon: "nest_clock_farsight_analog",
   };

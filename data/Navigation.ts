@@ -64,7 +64,7 @@ namespace Navigation {
     LINKS.about,
     LINKS.services,
     LINKS.patientResources,
-    LINKS.contact,
+    // LINKS.contact,
     LINKS.payBill,
     // LINKS.covidPolicy,
   ];

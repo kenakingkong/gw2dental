@@ -8,8 +8,8 @@
     <ul class="grid md:grid-cols-3 gap-4 md:gap-6">
       <li v-for="testimonial in testimonials"
         class="rounded-lg bg-primary/10 text-primary p-4 md:p-6 flex flex-col justify-between gap-2">
-        <p>{{ testimonial.quote }}</p>
-        <p>{{ testimonial.quoted }}</p>
+        <p class="font-medium">{{ testimonial.quote }}</p>
+        <p class="font-medium">{{ testimonial.quoted }}</p>
       </li>
     </ul>
   </UiSection>

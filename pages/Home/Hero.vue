@@ -1,11 +1,16 @@
 <template>
-  <div class="grid md:grid-cols-4 gap-4 md:gap-8 p-6 md:p-4 text-center md:text-left">
+  <div class="min-h-[350px] grid md:grid-cols-4 gap-4 md:gap-8 p-6 md:p-4 text-center md:text-left">
     <div class="md:col-span-2">
-      <div class="space-y-4 md:space-y-8">
+      <div class="h-full flex flex-col justify-center gap-4 md:gap-8">
         <h1 class="text-4xl md:text-6xl font-semibold">Let us craft your perfect smile!</h1>
         <UiBody>Get high-quality dental treatment from dentists that will treat
           you like family.</UiBody>
-        <UiBody class="font-bold">Call: (925) 803-8809</UiBody>
+        <!-- <div class="space-y-1 text-xl font-medium">
+          <p class="text-primary flex items-center gap-4"><span
+              class="material-symbols-rounded">phone_enabled</span>(925) 803-8809</p>
+          <p class="text-primary flex items-center gap-4"><span
+              class="material-symbols-rounded">mail</span>smile@gw2dental.com</p>
+        </div> -->
       </div>
     </div>
     <div class="hidden md:block md:col-span-1">
