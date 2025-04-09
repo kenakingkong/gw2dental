@@ -41,7 +41,7 @@
                 </Link>
                 <ul class="list-none space-y-4 grow flex flex-col justify-center">
                   <li v-for="link in mobileLinks" class="w-max">
-                    <Link :to="link.to" class="no-underline text-xl flex items-center gap-1"
+                    <Link :to="link.to" class="no-underline text-xl flex items-center gap-1 text-primary"
                       activeClass="text-blue-600">{{ link.label }}
                     <span v-show="!!link.icon" class="material-symbols-rounded">{{ link.icon }}</span>
                     </Link>
