@@ -1,8 +1,8 @@
 namespace Contact {
   export const PHONE_NUMBER = {
     id: "phone-number",
-    label: "(925) 803-8809",
-    href: "tel:+19258038809",
+    label: "(925) 830-8809",
+    href: "tel:+19258308809",
     icon: "phone_enabled",
   };
 

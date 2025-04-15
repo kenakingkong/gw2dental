@@ -24,11 +24,19 @@ namespace Navigation {
       to: "/patient-resources",
       icon: null,
     },
+    referralForm: {
+      id: "referral-form",
+      label: "Referral Form",
+      to: "/george_wong_dds_doctor_referral_form.pdf",
+      icon: "",
+      external: true,
+    },
     payBill: {
       id: "pay-bill",
       label: "Pay your Bill",
       to: "https://georgefwongdds.securepayments.cardpointe.com",
       icon: "arrow_outward",
+      external: true,
     },
     technologies: {
       id: "technologies",
@@ -54,6 +62,7 @@ namespace Navigation {
     LINKS.about,
     LINKS.services,
     LINKS.patientResources,
+    LINKS.referralForm,
     LINKS.payBill,
   ];
 
@@ -64,6 +73,7 @@ namespace Navigation {
     LINKS.about,
     LINKS.services,
     LINKS.patientResources,
+    LINKS.referralForm,
     // LINKS.contact,
     LINKS.payBill,
     // LINKS.covidPolicy,

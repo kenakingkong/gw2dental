@@ -1,7 +1,8 @@
 <template>
   <header class="bg-primary text-white">
     <div class="bg-primary border-b border-white/10 text-white font-medium text-center p-2">
-      <button @click="isModalOpen = true" class="tracking-wide hover:opacity-80">We will be closed 04/29-05/11. Our new office will be open 05/12.</button>
+      <button @click="isModalOpen = true" class="tracking-wide hover:opacity-80">We will be closed 04/29-05/11. Our new
+        office will be open 05/12.</button>
     </div>
     <UiContainer>
       <nav class="w-full flex gap-6 justify-between items-center">
@@ -14,7 +15,9 @@
         <!-- Tablet/Desktop Items -->
         <ul class="hidden md:flex gap-6 items-center list-none sticky top-0">
           <li v-for="link in links" class="w-max">
-            <Link :to="link.to" class="no-underline flex items-center gap-1" activeClass="text-blue-600">{{ link.label
+            <Link :to="link.to" :external="link.external"
+              class="no-underline flex items-center gap-1 aria-[current='true']:underline aria-[current='true']:text-white">
+            {{ link.label
             }}<span v-show="!!link.icon" class="material-symbols-rounded">{{ link.icon }}</span></Link>
           </li>
           <li class="w-max">
@@ -41,8 +44,9 @@
                 </Link>
                 <ul class="list-none space-y-4 grow flex flex-col justify-center">
                   <li v-for="link in mobileLinks" class="w-max">
-                    <Link :to="link.to" class="no-underline text-xl flex items-center gap-1 text-primary"
-                      activeClass="text-blue-600">{{ link.label }}
+                    <Link :to="link.to"
+                      class="no-underline text-xl flex items-center gap-1 text-primary aria-[current='true']:underline">
+                    {{ link.label }}
                     <span v-show="!!link.icon" class="material-symbols-rounded">{{ link.icon }}</span>
                     </Link>
                   </li>

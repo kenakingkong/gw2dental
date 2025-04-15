@@ -23,9 +23,15 @@ namespace Forms {
     icon: "outbound",
   };
 
-  export const DOCTOR_REFERRAL = {
-    label: "Doctor Referral Form",
-    href: "/doctor_referral_form.doc",
+  export const DOCTOR_REFERRAL_DOC = {
+    label: "Doctor Referral Form (DOC)",
+    href: "/george_wong_dds_doctor_referral_form.doc",
+    icon: "download",
+  };
+
+  export const DOCTOR_REFERRAL_PDF = {
+    label: "Doctor Referral Form (PDF)",
+    href: "/george_wong_dds_doctor_referral_form.pdf",
     icon: "download",
   };
 
@@ -34,7 +40,8 @@ namespace Forms {
     FINANCIAL_POLICY,
     OFFICE_POLICY,
     HIPAA_POLICY,
-    DOCTOR_REFERRAL,
+    DOCTOR_REFERRAL_DOC,
+    DOCTOR_REFERRAL_PDF,
   ];
 }
 
