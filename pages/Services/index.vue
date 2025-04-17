@@ -29,12 +29,12 @@ import Service from "./Service.vue"
   </Service>
   <div class="bg-secondary/5">
     <Service v-bind="Services.DENTAL_IMPLANTS">
-      <div class="w-max mr-auto">
+      <!-- <div class="w-max mr-auto">
         <UiButtonLink to="/case-studies#patient-3" class="w-max bg-primary text-white flex items-center gap-2">
           <span class="material-symbols-rounded text-xs">image</span>
           <span>See Before & After Images</span>
         </UiButtonLink>
-      </div>
+      </div> -->
     </Service>
   </div>
   <Service v-bind="Services.INVISALIGN">
@@ -46,12 +46,12 @@ import Service from "./Service.vue"
   </Service>
   <div class="bg-secondary/5">
     <Service v-bind="Services.COSMETIC_RECONSTRUCTION">
-      <div class="w-max mr-auto">
+      <!-- <div class="w-max mr-auto">
         <UiButtonLink to="/case-studies#patient-1" class="w-max bg-primary text-white flex items-center gap-2">
           <span class="material-symbols-rounded text-xs">image</span>
           <span>See Before & After Images</span>
         </UiButtonLink>
-      </div>
+      </div> -->
     </Service>
   </div>
 </template>
