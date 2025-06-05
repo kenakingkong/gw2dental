@@ -1,8 +1,7 @@
 <template>
   <header class="bg-primary text-white">
     <div class="bg-primary border-b border-white/10 text-white font-medium text-center p-2">
-      <button @click="isModalOpen = true" class="tracking-wide hover:opacity-80">We will be closed 04/29-05/11. Our new
-        office will be open 05/12.</button>
+      Our new office is located at 12677 Alcosta Blvd Suite 415.
     </div>
     <UiContainer>
       <nav class="w-full flex gap-6 justify-between items-center">
@@ -60,7 +59,6 @@
         </Teleport>
       </nav>
     </UiContainer>
-    <MovingModal :show="isModalOpen" @close="isModalOpen = false" />
   </header>
 </template>
 
@@ -71,8 +69,6 @@ import Contact from '~/data/Contact';
 import Navigation from '~/data/Navigation';
 
 const isOpen = ref(false)
-
-const isModalOpen = ref(true)
 
 const links = ref(Navigation.HEADER_LINKS)
 const mobileLinks = ref(Navigation.MOBILE_LINKS)

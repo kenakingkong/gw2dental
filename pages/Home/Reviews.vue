@@ -3,7 +3,7 @@
     <UiSectionHeader class="text-center">
       <template v-slot:header>Read the reviews</template>
       <template v-slot:subheader>Most of our patients are referred by friends, family,
-        neighbors, etc - here is what some of them have to say.</template>
+        neighbors, etc - here is what some of them have to&nbsp;say.</template>
     </UiSectionHeader>
     <ul class="grid md:grid-cols-3 gap-4 md:gap-6">
       <li v-for="testimonial in testimonials"

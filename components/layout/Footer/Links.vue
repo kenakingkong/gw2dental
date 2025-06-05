@@ -10,14 +10,14 @@ import Link from '../Header/Link.vue';
       <nav class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
         <ul class="flex flex-wrap gap-2 md:gap-4 items-center list-none">
           <li v-for="link in Navigation.FOOTER_LINKS" class="w-max">
-            <Link :to="link.to" class="no-underline text-white" activeClass="text-white underline">{{ link.label
+            <Link :to="link.to" class="no-underline text-white hover:opacity-80" activeClass="text-white underline">{{ link.label
             }}</Link>
           </li>
         </ul>
         <div class="flex items-center gap-2">
           <span class="font-medium text-lg tracking-wide">Leave us a review!</span>
-          <a :href="Contact.SOCIALS.GOOGLE.href" class="underline">{{ Contact.SOCIALS.GOOGLE.label }}</a>
-          <a :href="Contact.SOCIALS.YELP.href" class="underline">{{ Contact.SOCIALS.YELP.label }}</a>
+          <a :href="Contact.SOCIALS.GOOGLE.href" class="underline hover:opacity-80">{{ Contact.SOCIALS.GOOGLE.label }}</a>
+          <a :href="Contact.SOCIALS.YELP.href" class="underline hover:opacity-80">{{ Contact.SOCIALS.YELP.label }}</a>
         </div>
       </nav>
     </UiContainer>
@@ -30,8 +30,8 @@ import Link from '../Header/Link.vue';
         </p>
         <p class="text-white/80 w-max">
           Website designed and developed by <a href="https://www.henryzou.com/"
-            class="underline hover:text-primary">Henry
-            Zou</a> and <a href="https://www.makenakong.com" class="underline hover:text-primary">Makena Kong</a>
+            class="underline hover:opacity-80">Henry
+            Zou</a> and <a href="https://www.makenakong.com" class="underline hover:opacity-80">Makena Kong</a>
         </p>
       </div>
     </UiContainer>

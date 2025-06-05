@@ -16,8 +16,7 @@ namespace Contact {
   export const ADDRESS = {
     id: "address",
     label: [
-      "2301 Camino Ramon, Suite 100",
-      "Bishop Ranch 11",
+      "12677 Alcosta Blvd Suite 415",
       "San Ramon, CA 94583",
     ],
     href: "https://maps.app.goo.gl/sAXRdg8n8an7H2Hy9",

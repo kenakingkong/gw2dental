@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="no-underline hover:text-secondary text-lg" ariaCurrentValue="true">
+  <NuxtLink class="no-underline hover:opacity-80 text-lg" ariaCurrentValue="true">
     <slot />
   </NuxtLink>
 </template>

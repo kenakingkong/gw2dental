@@ -28,12 +28,6 @@ import Services from '~/data/Services';
       <UiButtonLink to="/services" class="text-white bg-primary">
         See our full list of services
       </UiButtonLink>
-      <!-- <UiFloatingBox class="bg-white">
-        <div class="space-y-2 text-center">
-          <p class="">Come in for a consultation and we will help you figure out what you need.</p>
-          <p class="">Call us to book your first appointment (925) 803-8809</p>
-        </div>
-      </UiFloatingBox> -->
     </UiSection>
   </div>
 </template>
