@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Services from '~/data/Services';
 import Service from "./Service.vue"
+
+useHead({ title: "Services" })
 </script>
 
 <template>

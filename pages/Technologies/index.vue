@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import Technologies from '~/data/Technologies';
+
+useHead({ title: "Technologies" })
 </script>
 
 <template>

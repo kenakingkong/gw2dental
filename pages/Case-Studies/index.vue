@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CaseStudies from '~/data/CaseStudies';
 
-
+useHead({ title: "Case Studies" })
 </script>
 
 <template>

@@ -32,5 +32,6 @@ import Hero from './Hero.vue';
 import Reviews from './Reviews.vue';
 import Treatments from './Treatments.vue';
 
+useHead({ title: "GW2 Dental" })
 definePageMeta({ layout: "default" })
 </script>

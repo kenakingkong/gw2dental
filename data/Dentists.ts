@@ -15,6 +15,8 @@ namespace Dentists {
     },
     quote:
       "We run a small, personalized dentistry where we can build long lasting relationships with our patients.",
+    webmd_url:
+      "https://doctor.webmd.com/doctor/george-wong-3edddbc6-4db0-44ec-8194-e9b187490aa7-overview",
   };
 
   export const WU = {
@@ -33,6 +35,8 @@ namespace Dentists {
     },
     quote:
       "Sometimes I get a patient and sometimes my husband will - which only means we both get to know you!",
+    webmd_url:
+      "https://doctor.webmd.com/doctor/grace-wu-5BA94935-FA20-4180-8BE6-40849CAC2926-overview",
   };
 }
 

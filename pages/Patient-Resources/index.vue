@@ -3,6 +3,8 @@ import FirstAppointment from './FirstAppointment.vue';
 import Forms from './Forms.vue';
 import Insurances from './Insurances.vue';
 import TransferHistory from './TransferHistory.vue';
+
+useHead({ title: "Patient Resources" })
 </script>
 
 <template>

@@ -18,4 +18,6 @@
 import Dentists from './Dentists.vue';
 import Gallery from './Gallery.vue';
 import Technologies from './Technologies.vue';
+
+useHead({ title: "About Us" })
 </script>
