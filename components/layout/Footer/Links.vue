@@ -28,7 +28,7 @@ import Link from '../Header/Link.vue';
         <p class="text-white w-max">
           Copyright © George Wong, DDS & Grace Wu, DDS 2025
         </p>
-        <p class="text-white/80 w-max">
+        <p class="text-white/90 w-max">
           Website designed and developed by <a href="https://www.henryzou.com/"
             class="underline hover:opacity-80">Henry
             Zou</a> and <a href="https://www.makenakong.com" class="underline hover:opacity-80">Makena Kong</a>

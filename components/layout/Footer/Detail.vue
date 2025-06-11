@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-start gap-4 text-lg">
     <UiIcon :name="icon" class="pt-1" />
-    <a v-show="!!href" class="block w-full hover:opacity-80" :href="href">
+    <a v-if="!!href" class="block w-full hover:opacity-80" :href="href">
       <span v-if="Array.isArray(label)" class="block w-full">
         <span v-for="str in label" class="block">{{ str }}</span>
       </span>
@@ -9,7 +9,7 @@
         {{ label }}
       </span>
     </a>
-    <span v-show="!href" class="block w-full">
+    <span v-else class="block w-full">
       <span v-if="Array.isArray(label)" class="block w-full">
         <span v-for="str in label" class="block w-full">
           <span v-if="Array.isArray(str)" class="block w-full grid grid-cols-2 gap-2">
