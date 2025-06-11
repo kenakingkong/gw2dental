@@ -2,25 +2,25 @@ namespace Forms {
   export const RECORD_RELEASE = {
     label: "Request for Record Release",
     href: "https://intake.doctible.com/c/qYotAp",
-    icon: "outbound",
+    icon: "arrow-outward",
   };
 
   export const FINANCIAL_POLICY = {
     label: "Financial Policy",
     href: "https://intake.doctible.com/c/DYAKrg",
-    icon: "outbound",
+    icon: "arrow-outward",
   };
 
   export const OFFICE_POLICY = {
     label: "Office Policy",
     href: "https://intake.doctible.com/c/vACXp6",
-    icon: "outbound",
+    icon: "arrow-outward",
   };
 
   export const HIPAA_POLICY = {
     label: "HIPAA and Fillings Policy",
     href: "https://intake.doctible.com/c/oZTIn1",
-    icon: "outbound",
+    icon: "arrow-outward",
   };
 
   export const DOCTOR_REFERRAL_DOC = {

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Services from '~/data/Services';
-
 </script>
 
 <template>
@@ -13,15 +12,15 @@ import Services from '~/data/Services';
       </UiSectionHeader>
       <ul class="w-full max-w-2xl mx-auto grid md:grid-cols-3 gap-4 py-4">
         <li class="flex flex-col items-center gap-2">
-          <img :src="Services.GENERAL_DENTISTRY.image" class="h-16 w-16" />
+          <UiIcon :name="Services.GENERAL_DENTISTRY.icon" size="64" />
           <span class="text-xl font-medium">{{ Services.GENERAL_DENTISTRY.title }}</span>
         </li>
         <li class="flex flex-col items-center gap-2">
-          <img :src="Services.PROSTHODONTICS.image" class="h-16 w-16" />
+          <UiIcon :name="Services.PROSTHODONTICS.icon" size="64" />
           <span class="text-xl font-medium">{{ Services.PROSTHODONTICS.title }}</span>
         </li>
         <li class="flex flex-col items-center gap-2">
-          <img :src="Services.COSMETIC_RECONSTRUCTION.image" class="h-16 w-16" />
+          <UiIcon :name="Services.COSMETIC_RECONSTRUCTION.icon" size="64" />
           <span class="text-xl font-medium">{{ Services.COSMETIC_RECONSTRUCTION.title }}</span>
         </li>
       </ul>

@@ -3,24 +3,21 @@ namespace Contact {
     id: "phone-number",
     label: "(925) 830-8809",
     href: "tel:+19258308809",
-    icon: "phone_enabled",
+    icon: "phone",
   };
 
   export const EMAIL = {
     id: "email",
     label: "smile@gw2dental.com",
     href: "mailto:smile@gw2dental.com",
-    icon: "mail",
+    icon: "envelope",
   };
 
   export const ADDRESS = {
     id: "address",
-    label: [
-      "12677 Alcosta Blvd Suite 415",
-      "San Ramon, CA 94583",
-    ],
+    label: ["12677 Alcosta Blvd Suite 415", "San Ramon, CA 94583"],
     href: "https://maps.app.goo.gl/sAXRdg8n8an7H2Hy9",
-    icon: "location_on",
+    icon: "location-pin",
   };
 
   export const HOURS = {
@@ -30,7 +27,7 @@ namespace Contact {
       ["Fri.", "Appt. Only"],
       ["Sat. - Sun.", "Closed"],
     ],
-    icon: "nest_clock_farsight_analog",
+    icon: "clock",
   };
 
   export const SOCIALS = {

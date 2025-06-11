@@ -4,7 +4,7 @@
       class="modal-mask fixed z-[9998] top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center p-4">
       <div class="modal-container relative w-full max-w-xl p-4 md:p-8 bg-white shadow rounded">
         <button class="absolute top-4 right-4" title="close" @click="$emit('close')">
-          <span class="material-symbols-rounded text-black">close</span>
+          <UiIcon name="close" class="fill-black" />
         </button>
         <slot />
       </div>

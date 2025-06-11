@@ -16,8 +16,8 @@
           <li v-for="link in links" class="w-max">
             <Link :to="link.to" :external="link.external"
               class="no-underline flex items-center gap-1 aria-[current='true']:underline aria-[current='true']:text-white">
-            {{ link.label
-            }}<span v-show="!!link.icon" class="material-symbols-rounded">{{ link.icon }}</span></Link>
+            {{ link.label }}
+            </Link>
           </li>
           <li class="w-max">
             <a :href="phoneNumber.href" class="no-underline font-bold">{{ phoneNumber.label }}</a>
@@ -27,7 +27,7 @@
         <!-- Mobile Button -->
         <div class="block md:hidden">
           <button @click="isOpen = true">
-            <span class="material-symbols-rounded">menu</span>
+            <UiIcon name="hamburger" aria-label="menu" />
           </button>
         </div>
 
@@ -46,7 +46,6 @@
                     <Link :to="link.to"
                       class="no-underline text-xl flex items-center gap-1 text-primary aria-[current='true']:underline">
                     {{ link.label }}
-                    <span v-show="!!link.icon" class="material-symbols-rounded">{{ link.icon }}</span>
                     </Link>
                   </li>
                   <li class="w-max">

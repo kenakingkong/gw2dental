@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-start gap-4 text-lg">
-    <span class="material-symbols-rounded pt-1">{{ icon }}</span> 
+    <UiIcon :name="icon" class="pt-1" />
     <a v-show="!!href" class="block w-full hover:opacity-80" :href="href">
       <span v-if="Array.isArray(label)" class="block w-full">
         <span v-for="str in label" class="block">{{ str }}</span>

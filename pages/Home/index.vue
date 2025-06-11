@@ -17,7 +17,7 @@
   <div class="bg-primary text-white">
     <UiSection class="text-center">
       <div class="w-max mx-auto">
-        <ToothSvg class="fill-white h-6 w-6" />
+        <UiIcon name="dental-tools" size="32" class="fill-white" />
       </div>
       <UiQuote>Our mission is to provide you with high-quality dental treatment.</UiQuote>
     </UiSection>

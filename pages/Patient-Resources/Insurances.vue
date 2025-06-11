@@ -26,29 +26,29 @@
       <tbody class="text-lg md:text-2xl font-medium text-primary">
         <tr class="bg-blue-50">
           <td class="p-4 md:py-8 rounded-l">Delta Dental Premier</td>
-          <td class="p-4 md:py-8 text-center">
-            <span title="accepted" class="material-symbols-rounded">check_circle</span>
+          <td class="p-4 md:py-8">
+            <div class="flex items-center justify-center">
+              <span class="sr-only">accepted</span>
+              <UiIcon name="check-circle" size="24" />
+            </div>
           </td>
-          <td class="p-4 md:py-8 text-center rounded-r">
-            <span title="accepted" class="material-symbols-rounded">check_circle</span>
+          <td class="p-4 md:py-8 rounded-r">
+            <div class="flex items-center justify-center">
+              <span class="sr-only">accepted</span>
+              <UiIcon name="check-circle" size="24" />
+            </div>
           </td>
         </tr>
-        <!-- <tr class="bg-blue-50/50">
-          <td class="p-4 md:py-8 rounded-l">Anthem Blue 300</td>
-          <td class="p-4 md:py-8 text-center">
-            <span title="accepted" class="material-symbols-rounded">check_circle</span>
-          </td>
-          <td class="p-4 md:py-8 text-center rounded-r">
-            <span title="accepted" class="material-symbols-rounded">check_circle</span>
-          </td>
-        </tr> -->
         <tr class="bg-blue-50">
           <td class="p-4 md:py-8 rounded-l">Aetna PPO</td>
           <td class="p-4 md:py-8 text-center">
-            <span title="not accepted"></span>
+            <span class="sr-only">not accepted</span>
           </td>
           <td class="p-4 md:py-8 text-center rounded-r">
-            <span title="accepted" class="material-symbols-rounded">check_circle</span>
+            <div class="flex items-center justify-center">
+              <span class="sr-only">accepted</span>
+              <UiIcon name="check-circle" size="24" />
+            </div>
           </td>
         </tr>
       </tbody>

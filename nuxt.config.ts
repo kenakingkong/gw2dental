@@ -1,8 +1,12 @@
+import svgLoader from "vite-svg-loader";
+import { visualizer } from "rollup-plugin-visualizer";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "GW2 Dental | Family Dentist, Maxillofacial Prosthodontics Treatment and Dental Implants in San Ramon, CA",
+      title:
+        "GW2 Dental | Family Dentist, Maxillofacial Prosthodontics Treatment and Dental Implants in San Ramon, CA",
       htmlAttrs: {
         lang: "en",
       },
@@ -15,5 +19,14 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
+  },
+  vite: {
+    plugins: [
+      svgLoader(),
+      visualizer({
+        template: "flamegraph",
+        // include: { file: "/.output/public/_nuxt/*" }, // only view client output, ignore server output
+      }),
+    ],
   },
 });

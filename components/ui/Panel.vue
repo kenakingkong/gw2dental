@@ -3,7 +3,7 @@
     <div v-if="show" class="panel-mask fixed top-0 left-0 w-full h-full bg-black/50 flex z-[9998]">
       <div class="panel-container w-full bg-white">
         <button class="absolute top-4 right-4" title="close" @click="$emit('close')">
-          <span class="material-symbols-rounded">close</span>
+          <UiIcon name="close" class="fill-black" />
         </button>
         <slot name="body" />
       </div>

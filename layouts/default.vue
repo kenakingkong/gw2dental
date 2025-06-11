@@ -21,8 +21,6 @@ useHead({
 </script>
 
 <style lang="css">
-@import 'material-symbols/rounded';
-
 * {
   box-sizing: border-box;
   margin: 0;
