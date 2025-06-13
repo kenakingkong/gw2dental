@@ -13,7 +13,9 @@
           <slot />
           <div v-if="callout && bottomCallout">
             <UiFloatingBox class="bg-white flex items-center gap-4 md:gap-6">
-              <UiIcon name="info-circle" size="36" />
+              <span class="srink-0">
+                <UiIcon name="info-circle" size="20" />
+              </span>
               <p class="">{{ callout.body }}</p>
             </UiFloatingBox>
           </div>

@@ -7,11 +7,11 @@
     <p class="text-lg md:text-2xl max-w-lg mx-auto text-center">
       We’ve been proudly serving patients in the East Bay for the past 20 years.</p>
     <div class="space-y-4 md:space-y-8">
-      <div class="grid md:grid-cols-3 gap-4 md:gap-8">
-        <div class="md:col-span-1 relative w-full max-h-[400px] max-w-[300px]">
+      <div class="grid sm:grid-cols-4 lg:grid-cols-3 gap-4 lg:gap-8">
+        <div class="sm:col-span-2 lg:col-span-1 relative w-full lg:max-h-[400px] lg:max-w-[300px]">
           <Dentist :id="WONG.id"/>
         </div>
-        <div class="md:col-span-2 space-y-4">
+        <div class="sm:col-span-2 space-y-4">
           <UiFloatingBox class="bg-white text-black space-y-2">
             <div>
               <p class="uppercase text-secondary font-medium tracking-wide">Specialty</p>
@@ -25,11 +25,11 @@
           </div>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 gap-4 md:gap-8">
-        <div class="md:col-span-1 relative w-full max-h-[400px] max-w-[300px]">
+      <div class="grid sm:grid-cols-4 lg:grid-cols-3 gap-4 lg:gap-8">
+        <div class="sm:col-span-2 lg:col-span-1 relative w-full lg:max-h-[400px] lg:max-w-[300px]">
           <Dentist :id="WU.id"/>
         </div>
-        <div class="md:col-span-2 space-y-4">
+        <div class="sm:col-span-2 space-y-4">
           <UiFloatingBox class="bg-white text-black space-y-2">
             <div>
               <p class="uppercase text-secondary font-medium tracking-wide">Specialty</p>

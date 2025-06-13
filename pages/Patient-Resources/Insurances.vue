@@ -8,13 +8,13 @@
             <span>Insurance</span>
           </th>
           <th class="p-2 md:p-4">
-            <div class="flex flex-col sm:flex-row items-start justify-center gap-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:gap-4">
               <DentistAvatar :src="Dentists.WONG.imageUrls.thumbnail" :alt="Dentists.WONG.name" />
               <span>{{ Dentists.WONG.shortName }}</span>
             </div>
           </th>
           <th class="p-2 md:p-4">
-            <div class="flex flex-col sm:flex-row items-start justify-center gap-4">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:gap-4">
               <DentistAvatar :src="Dentists.WU.imageUrls.thumbnail" :alt="Dentists.WU.name" />
               <span>{{ Dentists.WU.shortName }}</span>
             </div>

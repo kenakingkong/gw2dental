@@ -1,6 +1,7 @@
 <template>
   <header class="bg-primary text-white">
-    <div class="bg-primary border-b border-white/10 text-white font-medium text-center p-2 text-xs md:text-sm">
+    <div
+      class="bg-primary border-b border-white/10 text-white font-bold sm:font-medium text-center p-2 text-xs sm:text-sm">
       Our new office is located at 12677 Alcosta Blvd Suite&nbsp;415.
     </div>
     <UiContainer>
@@ -12,7 +13,7 @@
         </Link>
 
         <!-- Tablet/Desktop Items -->
-        <ul class="hidden md:flex gap-6 items-center list-none sticky top-0">
+        <ul class="hidden lg:flex gap-6 items-center list-none sticky top-0">
           <li v-for="link in links" class="w-max">
             <Link :to="link.to" :external="link.external"
               class="no-underline flex items-center gap-1 aria-[current='true']:underline aria-[current='true']:text-white">
@@ -25,7 +26,7 @@
         </ul>
 
         <!-- Mobile Button -->
-        <div class="block md:hidden">
+        <div class="block lg:hidden">
           <button @click="isOpen = true">
             <UiIcon name="hamburger" aria-label="menu" />
           </button>
@@ -38,12 +39,12 @@
               <div class="h-full p-6 flex flex-col">
                 <Link to="/" class="no-underline">
                 <div class="flex gap-2 items-center">
-                  <p class="md:text-lg font-bold">GW2 Dental</p>
+                  <p class="lg:text-lg font-bold">GW2 Dental</p>
                 </div>
                 </Link>
                 <ul class="list-none space-y-4 grow flex flex-col justify-center">
                   <li v-for="link in mobileLinks" class="w-max">
-                    <Link :to="link.to"
+                    <Link :to="link.to" @click="isOpen = false"
                       class="no-underline text-xl flex items-center gap-1 text-primary aria-[current='true']:underline">
                     {{ link.label }}
                     </Link>

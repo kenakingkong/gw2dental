@@ -7,8 +7,8 @@ import Link from '../Header/Link.vue';
 <template>
   <div class="bg-primary text-white  border-t border-white/10">
     <UiContainer class="md:text-lg">
-      <nav class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
-        <ul class="flex flex-wrap gap-2 md:gap-4 items-center list-none">
+      <nav class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
+        <ul class="flex flex-wrap gap-2 lg:gap-4 items-center list-none">
           <li v-for="link in Navigation.FOOTER_LINKS" class="w-max">
             <Link :to="link.to" class="no-underline text-white hover:opacity-80" activeClass="text-white underline">{{ link.label
             }}</Link>
