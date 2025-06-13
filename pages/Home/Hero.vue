@@ -2,7 +2,7 @@
   <div class="min-h-[350px] grid lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-8 p-6 lg:p-4 text-center lg:text-left">
     <div class="lg:col-span-2">
       <div class="h-full flex flex-col justify-center gap-4 lg:gap-8">
-        <h1 class="text-4xl lg:text-6xl font-semibold">Let us craft your perfect&nbsp;smile!</h1>
+        <h1 class="text-4xl lg:text-6xl font-bold">Let us craft your perfect&nbsp;smile!</h1>
         <UiBody>Get high-quality dental treatment from dentists that will treat
           you like&nbsp;family.</UiBody>
       </div>
