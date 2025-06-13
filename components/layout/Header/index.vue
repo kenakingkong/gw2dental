@@ -1,7 +1,7 @@
 <template>
   <header class="bg-primary text-white">
-    <div class="bg-primary border-b border-white/10 text-white font-medium text-center p-2">
-      Our new office is located at 12677 Alcosta Blvd Suite 415.
+    <div class="bg-primary border-b border-white/10 text-white font-medium text-center p-2 text-xs md:text-sm">
+      Our new office is located at 12677 Alcosta Blvd Suite&nbsp;415.
     </div>
     <UiContainer>
       <nav class="w-full flex gap-6 justify-between items-center">

@@ -5,7 +5,9 @@ namespace Dentists {
     longName: "George Wong, DDS",
     shortName: "Dr. Wong",
     imageUrls: {
-      standard: "/images/dentists/george_wong.webp",
+      large: "/images/dentists/george_wong.webp",
+      standard: "/images/dentists/george_wong_800w.webp",
+      small: "/images/dentists/george_wong_400w.webp",
       thumbnail: "/images/dentists/george_wong_thumbnail.webp",
     },
     specialty: {
@@ -25,7 +27,9 @@ namespace Dentists {
     longName: "Grace Wu, DDS",
     shortName: "Dr. Wu",
     imageUrls: {
-      standard: "/images/dentists/grace_wu.webp",
+      large: "/images/dentists/grace_wu.webp",
+      standard: "/images/dentists/grace_wu_800w.webp",
+      small: "/images/dentists/grace_wu_400w.webp",
       thumbnail: "/images/dentists/grace_wu_thumbnail.webp",
     },
     specialty: {

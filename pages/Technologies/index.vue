@@ -25,7 +25,7 @@ useHead({ title: "Technologies" })
         <div class="flex flex-wrap gap-4 md:gap-6">
           <figure v-for="image in technology.images" class="space-y-2">
             <img :src="image.src" :alt="image.alt"
-              class="w-full max-w-full md:max-w-96 h-auto md:h-64 object-cover rounded border" />
+              class="w-full max-w-full md:max-w-96 h-auto md:h-64 object-cover rounded border" loading="lazy" />
             <figcaption class="font-medium text-center text-gray-500">{{ image.caption }}</figcaption>
           </figure>
         </div>

@@ -9,8 +9,7 @@
     <div class="space-y-4 md:space-y-8">
       <div class="grid md:grid-cols-3 gap-4 md:gap-8">
         <div class="md:col-span-1 relative w-full max-h-[400px] max-w-[300px]">
-          <Dentist :src="WONG.imageUrls.standard" :alt="WONG.name">{{ WONG.longName }}
-          </Dentist>
+          <Dentist :id="WONG.id"/>
         </div>
         <div class="md:col-span-2 space-y-4">
           <UiFloatingBox class="bg-white text-black space-y-2">
@@ -28,7 +27,7 @@
       </div>
       <div class="grid md:grid-cols-3 gap-4 md:gap-8">
         <div class="md:col-span-1 relative w-full max-h-[400px] max-w-[300px]">
-          <Dentist :src="WU.imageUrls.standard" :alt="WU.name">{{ WU.longName }}</Dentist>
+          <Dentist :id="WU.id"/>
         </div>
         <div class="md:col-span-2 space-y-4">
           <UiFloatingBox class="bg-white text-black space-y-2">

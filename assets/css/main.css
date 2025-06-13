@@ -48,4 +48,7 @@
   margin: 0;
   font-family: "Afacad", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size-adjust: 0.45;
+  ascent-override: 92%;
+  descent-override: 18%;
+  line-gap-override: 0%;
 }

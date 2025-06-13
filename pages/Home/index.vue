@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-5xl mx-auto my-2 md:my-12 lg:mt-16">
+  <div class="w-full max-w-xl lg:max-w-5xl mx-auto my-2 md:my-12 lg:mt-16">
     <Hero />
   </div>
   <div class="bg-secondary/10">

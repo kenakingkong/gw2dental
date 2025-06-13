@@ -10,7 +10,7 @@ import Technologies from '~/data/Technologies';
     </UiQuote>
     <div class="grid md:grid-cols-3 gap-8 py-4">
       <figure v-for="technology in Technologies.FEATURED" class="mx-auto space-y-2">
-        <img :src="technology.image.src" :alt="technology.image.alt" class="w-64 h-64 mx-auto object-cover rounded" />
+        <img :src="technology.image.src" :alt="technology.image.alt" class="w-64 h-64 mx-auto object-cover rounded" loading="lazy" />
         <figcaption class="text-lg font-medium text-center">{{ technology.name }}</figcaption>
       </figure>
     </div>
