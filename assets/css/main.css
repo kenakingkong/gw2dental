@@ -52,3 +52,20 @@
   descent-override: 18%;
   line-gap-override: 0%;
 }
+
+.animate-fadein {
+  -moz-animation: fadeIn ease 500ms;
+  -ms-animation: fadeIn ease 500ms;
+  -o-animation: fadeIn ease 500ms;
+  -webkit-animation: fadeIn ease 500ms;
+  animation: fadeIn ease 500ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
