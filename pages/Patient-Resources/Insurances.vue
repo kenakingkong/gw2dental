@@ -38,7 +38,7 @@
             </div>
           </td>
         </tr>
-        <tr class="bg-blue-50">
+        <!-- <tr class="bg-blue-50">
           <td class="p-4 md:py-8 rounded-l">Aetna PPO</td>
           <td class="p-4 md:py-8 text-center">
             <span class="sr-only">not accepted</span>
@@ -49,7 +49,7 @@
               <UiIcon name="check-circle" size="24" />
             </div>
           </td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
   </UiSection>
